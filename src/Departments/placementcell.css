@@ -1,0 +1,95 @@
+
+
+.piace{
+    height:2500px ;
+     width: 100%;
+     background-color: gainsboro;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ 
+}
+
+.omgki{
+    padding-top: 5%;
+     height:2200px ;
+     width: 80%;
+     /* background-color: gray; */
+
+}
+.omgki>P{
+    text-align: justify;
+}
+/* 34567890 */
+
+.omgki {
+
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.company-heading {
+  background-color:#5d0929ff; /* red */
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* List base */
+.company-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.company-list li {
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.company-list li:hover {
+  transform: translateX(8px);
+  background-color: #f1f1f1;
+}
+
+/* Row color styles */
+.gray {
+  background-color: #e6e6e6;
+  color: #444;
+}
+
+.white {
+  background-color: #fafafa;
+  color: #333;
+}
+
+.green {
+  background-color: #e0f2dc;
+  color: #2c662d;
+  font-weight: bold;
+}
+
+.blue {
+  background-color: #d9edf7;
+  color: #005580;
+  font-weight: bold;
+}
+
+.yellow {
+  background-color: #fcf8e3;
+
+  /* color: #8a6d3b; */
+  color: blue;
+ 
+}

@@ -1,0 +1,527 @@
+.void{
+    height: 750px;
+    width: 100%;
+    background-color: aqua;
+}
+.void>img{
+    height: 550px;
+    width: 100%; 
+    border-bottom: solid 10px #5d0929ff ;
+}
+.work{
+  height: 740px;
+    width: 100%; 
+   /* background-color:gainsboro; */
+   display: flex;
+   text-align: center;
+   justify-content: center;
+}
+.syii{
+   height: 550px;
+    width: 90%; 
+   background-color:#5d0929ff;  
+}
+
+
+/* nextproject css */
+
+/* Project Page Styles */
+.void {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+.void img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Work Section */
+.work {
+  width: 100%;
+  padding: 2rem;
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+/* Laiya Section */
+.laiya {
+  width: 100%;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.laiya-content {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Left text */
+.laiya-text {
+  flex: 1;
+  animation: fadeInLeft 1.2s ease-in-out;
+}
+.laiya-text h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #222;
+}
+.laiya-text p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.laiya-btn {
+  padding: 0.75rem 1.5rem;
+  background: #ff6b6b;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.laiya-btn:hover {
+  background: #e63946;
+}
+
+.laiya-contacts {
+  margin-top: 1rem;
+}
+.laiya-contacts p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+.laiya-contacts a {
+  color: #007bff;
+  text-decoration: none;
+}
+.laiya-contacts a:hover {
+  text-decoration: underline;
+}
+
+/* Right image */
+.laiya-image {
+  flex: 1;
+  text-align: center;
+  animation: fadeInRight 1.2s ease-in-out;
+}
+.laiya-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .laiya-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .laiya-text h1 {
+    font-size: 1.8rem;
+  }
+  .laiya-btn {
+    margin-top: 0.5rem;
+  }
+  .laiya-image img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .void {
+    height: 250px;
+  }
+  .laiya-text h1 {
+    font-size: 1.5rem;
+  }
+  .laiya-text p {
+    font-size: 0.9rem;
+  }
+  .laiya-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+
+
+/* LIBRARY.CSSSS */
+/* ========= LIBRARY SECTION STYLES ========= */
+.tinku {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.tinku img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: zoomIn 8s ease-in-out infinite alternate;
+  border-radius: 12px;
+}
+
+/* Zoom animation for image */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+/* Library main section */
+.library-section {
+  padding: 50px 8%;
+  text-align: center;
+  background: #f9fafb;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.rid-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: slideIn 1.5s ease;
+}
+
+.jin-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.library-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  color: #333;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Stats section */
+.library-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.stat-card {
+  padding: 25px;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: popUp 1s ease;
+}
+
+.stat-card .count {
+  display: block;
+  font-size: 30px;
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+/* Colors */
+.stat-card.grey {
+  background: #6c757d;
+}
+.stat-card.light {
+  background: #17a2b8;
+}
+.stat-card.green {
+  background: #28a745;
+}
+.stat-card.blue {
+  background: #007bff;
+}
+
+/* Hover effect */
+.stat-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ========= ANIMATIONS ========= */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes popUp {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 768px) {
+  .rid-title {
+    font-size: 30px;
+  }
+  .jin-subtitle {
+    font-size: 18px;
+  }
+  .library-desc {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tinku {
+    height: 220px;
+  }
+  .rid-title {
+    font-size: 24px;
+  }
+  .library-desc {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+
+
+
+/* CAROUSELSM 234567890- */
+  /* CAROUSELS */
+  /* Carousel Main Container */
+/* Navigation buttons */
+/* Main Image */
+.carousel-container {
+  /* background: #000; */
+  background-color: #03045e;
+  height: 596px;
+  color:#5d0929ff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.carousel-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #00eaff;
+  font-weight: bold;
+}
+
+/* Layout */
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Thumbnails */
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.thumbnail:hover {
+  border-color: #00eaff;
+}
+.thumbnail.active {
+  border-color: #ff4757;
+}
+
+/* Main Image */
+.main-image-wrapper {
+  position: relative;
+}
+.main-image {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border: 4px solid white;
+  border-radius: 8px;
+}
+
+/* Navigation buttons */
+.piright {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 234, 255, 0.8);
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.piright:hover {
+  background: #ff4757;
+  color: white;
+}
+.piright .first{
+  left: -40px;
+}
+.piright.second {
+  right:1px ;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    flex-direction: column;
+  }
+
+  .thumbnails {
+    flex-direction: row;
+    justify-content: center;
+    max-height: none;
+    overflow-x: auto;
+  }
+
+  .main-image {
+    width: 95%;
+    height: auto;
+  }
+
+  .nav-btn.left {
+    left: 10px;
+  }
+  .nav-btn.right {
+    right: 10px;
+  }
+}
+
+
+
+
+
+/* SCHOLARSHIP */
+
+.faisa{
+  height: 500px;
+  width: 100%;
+  background-color: #a30000;
+}
+.faisa>img{
+  height: 500px;
+  width: 100%;
+  border-bottom: solid 10px #5d0929ff;
+}
+
+.yahhh{
+    height: 600px;
+  width: 100%;
+   background-color:gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.goli{
+   height: 40px;
+  width: 100%;
+  /* background-color: yellow; */
+  margin-top: 2%;
+}
+.tccx{
+   height: 220px;
+  width: 100%;
+  /* background-color: green; */
+}
+.tccx>h5{
+  padding-left: 10%;
+    margin-top: 1%;
+    color: #555;
+}
+.piwy{
+  padding-left: 13%;  
+  color: #555;
+}
+
+
+

@@ -1,0 +1,416 @@
+
+/* .slidery{
+    height: 270px;
+    width: 100%;
+    background-color: bisque;
+} */
+.moli-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  background:rgb(165, 29, 81); /* same blue background */
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.moli-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.moli-card h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.moli-label {
+  margin: 5px 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.moli-line {
+  width: 60px;
+  height: 2px;
+  background: #fff;
+  margin: 10px 0;
+}
+
+.moli-icon {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .moli-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .moli-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+  /* INDIA.CSS */
+
+
+  .india {
+  height: auto;
+  min-height: 800px;
+  width: 100%;
+  
+   background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 15px;
+  gap: 5%;
+}
+.left{
+  height: 800px;
+  width: 40%;
+  /* background-color: #333; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.kaluo{
+ height: 300px;
+  width: 100%;
+  /* background-color: pink;  */
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.kaluo>P{
+ text-align: justify;
+color: green;
+font-size: 20px;
+}
+.right{
+   height: 600px;
+  width: 50%;
+  /* background-color: #333; */
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1%;
+}
+.sunder{
+  height: 200px;
+  width: 100%;
+  /* background-color: pink;  */
+}
+
+.kaluouu{
+   height: 200px;
+  width: 100%;
+  background-color: pink; 
+}
+.kaluoooo{
+   height: 200px;
+  width: 100%;
+  background-color: pink; 
+  border-radius: 45px;
+  
+}
+.kaluoooo>h1{
+  padding-left: 4%;
+}
+.kaluoo>img{
+   height: 400px;
+  width: 95%;
+   border-radius: 5%;
+  border: solid 2px blue  ;
+ 
+}
+/* india.css m responsive */
+
+
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .india {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .left,
+  .right {
+    width: 90%;
+    height: auto;
+  }
+
+  .kaluo > p {
+    font-size: 18px;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .india {
+    padding: 20px 10px;
+  }
+
+  .kaluo > p {
+    font-size: 16px;
+  }
+
+  .sunder h2 {
+    font-size: 28px !important;
+  }
+
+  .carousel-track {
+    gap: 10px;
+  }
+
+  .carousel-card {
+    min-width: 120px;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .india {
+    padding: 15px 8px;
+  }
+
+  .kaluo > p {
+    font-size: 14px;
+  }
+
+  .sunder h2 {
+    font-size: 22px !important;
+  }
+
+  .carousel-card {
+    min-width: 100px;
+  }
+}
+
+/* 34567 */
+
+.idia {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  flex-wrap: wrap;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.box1 {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+  animation: slideIn 0.8s ease-in-out;
+}
+
+.box2 {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  height: 450px;
+  background: url("https://picsum.photos/600/450") center/cover no-repeat;
+  border-radius: 12px;
+  animation: zoomIn 0.8s ease-in-out;
+}
+
+/* Inputs */
+.forrm, 
+.forryy {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.forrm:focus, 
+.forryy:focus {
+  border-color: #2193b0;
+  box-shadow: 0 0 8px rgba(33,147,176,0.5);
+  transform: scale(1.02);
+}
+
+/* Textarea */
+.forryy {
+  min-height: 120px;
+  resize: none;
+}
+
+/* Button */
+.formiii {
+  height: 50px;
+  width: 45%;
+  background: linear-gradient(135deg, #a51d51, #5d0929);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.formiii:hover {
+  background: white;
+  color: #a51d51;
+  border: 2px solid #a51d51;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .idia {
+    flex-direction: column;
+  }
+  .box1, .box2 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .box2 {
+    height: 250px;
+  }
+}
+
+
+
+/* 2345678909  NEXT */
+
+.next {
+
+
+  text-align: center;
+  padding: 30px 15px;
+  /* background: #fdfdf4; */
+  background-color:  #ffffff;
+  background-color: #0033cc;
+  border-radius: 45px;
+}
+
+.aff-heading {
+  font-size: 26px;
+  font-weight: bold;
+  color: #0033cc;
+  margin-bottom: 10px;
+}
+
+.aff-para {
+  font-size: 16px;
+  max-width: 650px;
+  margin: 0 auto 30px auto;
+  color: #333;
+  line-height: 5.8;
+}
+
+/* Carousel container */
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  height: 180px;
+  position: relative;
+  margin-top: 20px;
+}
+
+/* Carousel track */
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 18s linear infinite;
+}
+
+/* Individual card */
+.carousel-card {
+  min-width: 150px;
+  height: 150px;
+  background: #fff;
+  
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-card {
+    min-width: 120px;
+    height: 120px;
+  }
+  .aff-heading {
+    font-size: 22px;
+  }
+  .aff-para {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-card {
+    min-width: 90px;
+    height: 90px;
+  }
+  .aff-heading {
+    font-size: 18px;
+  }
+  .aff-para {
+    font-size: 13px;
+  }
+}

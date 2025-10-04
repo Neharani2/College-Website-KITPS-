@@ -1,0 +1,183 @@
+/* 
+.back{
+  height: 500px;
+  background-color: aqua;
+  width: 100%;
+
+}
+form{
+  width: 350px;
+  background-color: white;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 33px;
+  padding: 11px;
+  text-align: center;
+}
+.heading{
+  text-align: center;
+ font-weight: 600;
+ font-size: 33px;
+ margin-top: 0PX;
+}
+form input{
+  width: 90%;
+  border: 1px solid black;
+  padding: 6px;
+  font-size: 18px;
+  position: relative;
+  top: -13px;
+}
+.fieldName{
+  text-align: left;
+  margin-left: 11px;
+  font-weight: 500;
+ 
+}
+form .data{
+  margin-top: -13px;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 12px;
+}
+form .noData{
+  
+
+  margin-top: -13px;
+  font-size: 16px;
+  text-align: left;
+  margin-left: 12px;
+
+  color: red;
+}
+.bttnm{
+  height: 35px;
+  width: 30%;
+  background-color: green;
+  color: white;
+  border: 5px;
+
+} */
+
+
+/* next css */
+
+/* Background */
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(135deg, #6dd5ed, #2193b0); */
+  background-color:#FFF5F2;
+  height: 100vh;
+  padding: 15px;
+}
+
+/* Form */
+form {
+  width: 150%;
+  max-width: 700px;
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Labels */
+.fieldName {
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input Focus */
+form input:focus {
+  border-color: #2193b0;
+  box-shadow: 0 0 8px rgba(33,147,176,0.5);
+  transform: scale(1.02);
+}
+
+/* Error messages */
+form .noData {
+  font-size: 14px;
+  color: red;
+  margin-top: 5px;
+  animation: shake 0.3s;
+}
+
+form .data {
+  font-size: 14px;
+  margin-top: 5px;
+  color: transparent; /* Valid case me text na dikhai de */
+}
+
+/* Button */
+.bttnm {
+  width: 100%;
+  height: 40px;
+  background: #5d0929ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.bttnm:hover {
+  background: rgb(165, 29, 81);
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  form {
+    padding: 20px;
+    width: 95%;
+  }
+  .heading {
+    font-size: 25px;
+  }
+  .bttnm {
+    font-size: 14px;
+  }
+}
+

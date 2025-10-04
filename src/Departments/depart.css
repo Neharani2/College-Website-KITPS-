@@ -1,0 +1,581 @@
+
+/* civil engineer */
+/* .departy{
+    height: 500px;
+    width: 100%;
+    background-color: blue;
+}
+.departy>img{
+    height: 500px;
+    width: 100%;
+
+} */
+
+.departy {
+  width: 100%;
+  max-height: 600px; /* max limit rakhi h but responsive bhi rahega */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    border-bottom: solid 10px  #5d0929 ;
+}
+
+.departy > img {
+  width: 100%;
+  height: auto;      /* image height auto ho jayegi */
+  object-fit: cover; /* image stretch na ho */
+  border-radius: 8px; 
+
+}
+
+/* Mobile ke liye */
+@media (max-width: 768px) {
+  .departy {
+    max-height: 300px; /* chhoti screen pe kam height */
+  }
+}
+
+/* 34567 */
+.smart {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-left: 6px solid #0077b6; /* accent border */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.smart h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #023e8a;
+  text-align: center;
+}
+
+.smart p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .smart {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .smart h1 {
+    font-size: 1.5rem;
+  }
+
+  .smart p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+/* 2345678 */
+.labs-section {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.labs-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #023e8a;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.labs-section h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #0077b6;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.labs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.lab-card {
+  background: #f9f9f9;
+  border-left: 5px solid #0077b6;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.lab-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.lab-card h3 {
+  font-size: 1.3rem;
+  color: #03045e;
+  margin-bottom: 10px;
+}
+
+.lab-card p,
+.lab-card ul {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.lab-card ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .labs-section h2 {
+    font-size: 1.6rem;
+  }
+  .lab-card h3 {
+    font-size: 1.1rem;
+  }
+  .lab-card p,
+  .lab-card ul {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* 34567890   INSITUTE.CSS */
+/* About Us Section */
+.insi {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f5f8fa;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+  /* Animation */
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 0.3s; /* optional delay for smoother entry */
+}
+
+/* Headings and paragraphs */
+.insi h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+  text-align: center;
+}
+
+.insi h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2563eb;
+  text-align: center;
+}
+
+.insi p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Fade in & move up animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive for tablets & mobiles */
+@media (max-width: 992px) {
+  .insi {
+    padding: 25px;
+  }
+
+  .insi h1 {
+    font-size: 2.2rem;
+  }
+
+  .insi h2 {
+    font-size: 1.6rem;
+  }
+
+  .insi p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .insi {
+    padding: 20px;
+    margin: 30px 15px;
+  }
+
+  .insi h1 {
+    font-size: 2rem;
+  }
+
+  .insi h2 {
+    font-size: 1.4rem;
+  }
+
+  .insi p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+
+/* MISSION AND VISSION */
+.arman {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  height: 500px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9fafb;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.arman .mission,
+.arman .vision {
+  flex: 1;
+  padding: 20px;
+}
+
+.arman h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+}
+
+.arman p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #374151;
+}
+
+/* Fade in & move up animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 992px) {
+  .arman {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .arman .mission,
+  .arman .vision {
+    padding: 15px 0;
+  }
+
+  .arman h2 {
+    font-size: 1.8rem;
+  }
+
+  .arman p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .arman h2 {
+    font-size: 1.5rem;
+  }
+
+  .arman p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Culture . css */
+
+.rohina {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff9f5;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  animation: fadeInUp 1s ease;
+}
+
+.rohina-title {
+  color: #b22222;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.rohina-subtitle {
+  color: #8b0000;
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.rohina-intro, .rohina-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.rohina-list {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 25px;
+}
+
+.rohina-list li {
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.rohina-list li:hover {
+  transform: translateX(5px);
+  color: #b22222;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .rohina {
+    padding: 15px;
+    margin: 30px 10px;
+  }
+
+  .rohina-title {
+    font-size: 1.8rem;
+  }
+
+  .rohina-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .rohina-intro, .rohina-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Simple animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* STUDENT SOCOITY.CSS */
+
+  /* .kangna{
+  height: 500px;
+  width: 100%;
+  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sonnu{
+    height: 250px;
+  width: 90%;
+  background-color: gray;
+ }  */
+.kangna {
+  min-height: 100vh; /* responsive height relative to viewport */
+  width: 100%;
+  background-color: gainsboro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* space around content */
+  box-sizing: border-box;
+}
+
+.sonnu {
+  width: 90%;
+  max-width: 1200px; /* prevents too wide on big screens */
+  /* background-color: gray; */
+  padding: 20px;
+  box-sizing: border-box;
+  height: auto; /* dynamic height based on content */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .kangna {
+    min-height: 40vh;
+    padding: 15px;
+  }
+
+  .sonnu {
+    width: 95%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kangna {
+    min-height: 30vh;
+    padding: 10px;
+  }
+
+  .sonnu {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* sports . css */
+
+
+
+.manassage {
+  width: 100%;
+  overflow-x: auto;
+  margin: 30px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Table style */
+.facility-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Header */
+.facility-table thead {
+  background: #5d0929;
+  color: #fff;
+}
+
+.facility-table th,
+.facility-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border: 1px solid #eee;
+}
+
+.facility-table th {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.facility-table td {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Alternate row color */
+.facility-table tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* Hover effect */
+.facility-table tbody tr:hover {
+  background: #ffe6f0;
+  transition: 0.3s;
+}
+
+/* ✅ Mobile view */
+@media (max-width: 768px) {
+  .facility-table thead {
+    display: none;
+  }
+
+  .facility-table,
+  .facility-table tbody,
+  .facility-table tr,
+  .facility-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .facility-table tr {
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+  }
+
+  .facility-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+  }
+
+  .facility-table td:last-child {
+    border-bottom: none;
+  }
+
+  .facility-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #5d0929;
+    flex: 1;
+    text-align: left;
+    padding-right: 10px;
+  }
+
+  .facility-table td {
+    flex: 2;
+    text-align: right;
+  }
+}
